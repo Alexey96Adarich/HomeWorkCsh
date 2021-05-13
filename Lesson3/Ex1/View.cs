@@ -25,9 +25,9 @@ namespace Ex1
             z4.Print();
             Console.WriteLine();
         }
-        /// <summary>
+        /// 
         /// /////////////////////////////////////////////////////////////////////////////////////////
-        /// </summary>
+        /// 
         public static void NewMethodTwo()
         {
             Console.WriteLine("Пункт задания Б. Дописать класс Complex, добавив методы вычитания и произведения чисел. Проверить работу класса.");
@@ -36,7 +36,8 @@ namespace Ex1
             SComplex Scomplex2 = new SComplex(20, 4);  // im  re
 
             Scomplex2.Im = 20;
-
+            Scomplex1.Print();
+            Scomplex2.Print();
             SComplex result = Scomplex1.Plus(Scomplex2);
             Console.WriteLine("сумма: " + result.ToString());
 

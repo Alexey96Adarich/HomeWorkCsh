@@ -104,5 +104,10 @@ namespace Ex1
         {
             return re + "+" + im + "i";
         }
+        public void Print()
+        {
+            Console.WriteLine($"{re} + {im}i");
+
+        }
     }
 }
