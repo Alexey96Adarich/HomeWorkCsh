@@ -17,7 +17,7 @@ using ex2;
 
 namespace test
 {
-
+     
     class Program
     {
         static void Main(string[] args)

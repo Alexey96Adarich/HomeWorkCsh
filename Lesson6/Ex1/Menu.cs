@@ -16,7 +16,7 @@ namespace Lesson6
         ///   Продемонстрировать работу на функции с функцией a*x^2 и функцией a*sin(x).
         /// </summary>
         public static void NewMethod()
-        {
+        { 
             // Создаем новый делегат и передаем ссылку на него в метод Table
             Console.WriteLine("Таблица функции x^3:");
             Ret.Table(Ret.MyFunc, -2, 2);

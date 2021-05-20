@@ -65,7 +65,7 @@ namespace ConsoleApp1
             foreach (var v in list)
             {
                 Console.WriteLine("Возраст {0}: {1} {2}", v.age, v.surname, v.name);
-            }
+            } 
             Console.WriteLine();
 
             Console.WriteLine("Количество студентов 18-20 лет, обучающихся на 1-6 курсах:");
