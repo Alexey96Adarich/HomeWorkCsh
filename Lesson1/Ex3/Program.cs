@@ -8,12 +8,8 @@ namespace Ex3
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void NewMethod()
         {
-            //Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2 по формуле
-            //r = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2).
-            //Вывести результат, используя спецификатор формата .2f(с двумя знаками после запятой);
-
             Console.WriteLine(" ВВедите коордитнаты  первой точки x1 и y1, через Enter");
             double x1 = Convert.ToDouble(Console.ReadLine());
             double y1 = Convert.ToDouble(Console.ReadLine());
@@ -25,7 +21,16 @@ namespace Ex3
             double r = (double)Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));    //Math.Sqrt  квадратный корень из числа
             Console.WriteLine(("Расстояние между 2 точками ") + Convert.ToDouble($"{r:F2}"));
             Console.ReadKey();
+        }
+        static void Main(string[] args)
+        {
+            //Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2 по формуле
+            //r = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2).
+            //Вывести результат, используя спецификатор формата .2f(с двумя знаками после запятой);
+            NewMethod();
 
         }
+
+       
     }
 }

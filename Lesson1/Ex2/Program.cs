@@ -8,13 +8,8 @@ namespace Ex2
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void NewMethod()
         {
-            //  Ввести вес и рост человека.
-            //  Рассчитать и вывести индекс массы тела(ИМТ) по формуле:
-            //  I = m / (h * h); где m — масса тела в килограммах, h — рост в метрах.
-
-
             Console.WriteLine("Введите ваш вес, в кг");
             double a = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите ваш рост, в метрах");
@@ -25,5 +20,14 @@ namespace Ex2
 
             Console.ReadLine();
         }
+        static void Main(string[] args)
+        {
+            //  Ввести вес и рост человека.
+            //  Рассчитать и вывести индекс массы тела(ИМТ) по формуле:
+            //  I = m / (h * h); где m — масса тела в килограммах, h — рост в метрах.
+            NewMethod();
+        }
+
+        
     }
 }

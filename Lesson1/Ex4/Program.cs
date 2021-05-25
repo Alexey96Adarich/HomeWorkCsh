@@ -8,21 +8,16 @@ namespace Ex4
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void NewMethod()
         {
-            //Написать программу обмена значениями двух переменных типа int без использования вспомогательных методов.
-            //а) с использованием третьей переменной;
-            //б) *без использования третьей переменной.
-
-
             //a
             Console.Write("Введите a");
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите b");
             int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(a);
-            a = Convert.ToInt32(b);
-            b = Convert.ToInt32(c);
+            int c = a;
+            a = b;
+            b = c;
             Console.WriteLine($"a = {a}, b = {b}");
 
             //b
@@ -33,5 +28,16 @@ namespace Ex4
             Console.WriteLine($"a = {a}, b = {b}");    // Вернули значения a и b в первоначальное значение, но без 3 переменной
             Console.ReadKey();
         }
+        static void Main(string[] args)
+        {
+            //Написать программу обмена значениями двух переменных типа int без использования вспомогательных методов.
+            //а) с использованием третьей переменной;
+            //б) *без использования третьей переменной.
+
+            
+            NewMethod();
+        }
+
+        
     }
 }
